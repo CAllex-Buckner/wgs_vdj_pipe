@@ -1,2 +1,2 @@
-# wgs_vdj_pipe
+# WGS Comparative Seq Analysis
  

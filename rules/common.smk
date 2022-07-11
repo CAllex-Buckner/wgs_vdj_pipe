@@ -1,8 +1,8 @@
 import pandas as pd
 
-samples = pd.read_csv("config/samples.csv").set_index("sample", drop=False)
+samples = pd.read_csv("../config/samples.csv").set_index("sample", drop=False)
 
-units = pd.read_csv("config/units.csv", dtype=str).set_index(
+units = pd.read_csv("../config/units.csv", dtype=str).set_index(
     ["sample", "unit"], drop=False
 )
 units.index = units.index.set_levels(
