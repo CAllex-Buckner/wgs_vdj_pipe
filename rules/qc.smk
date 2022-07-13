@@ -1,6 +1,6 @@
 rule fastqc:
     input:
-        unpack(get_fastq)
+        unpack(get_fastqs)
     output:
         html="results/qc/fastqc/{sample}-{unit}.html",
         zip="results/qc/fastqc/{sample}-{unit}.zip"
