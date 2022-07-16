@@ -10,8 +10,7 @@ rule trim_reads_pe:
         r1="results/trimmed/{sample}-{unit}.1.fastq.gz",
         r2="results/trimmed/{sample}-{unit}.2.fastq.gz",
         r1_unpaired="results/trimmed/{sample}-{unit}.1.unpaired.fastq.gz",
-        r2_unpaired="results/trimmed/{sample}-{unit}.2.unpaired.fastq.gz",
-        trimlog="results/trimmed/{sample}-{unit}.trimlog.txt"
+        r2_unpaired="results/trimmed/{sample}-{unit}.2.unpaired.fastq.gz"
     log:
         "logs/trimmomatic/{sample}-{unit}.log"
     params:
